@@ -1,9 +1,9 @@
-import React from 'react'
 
-export default function () {
-    return (
-        <div>
-            hello from error page
-        </div>
-    )
+import React from 'react'
+import Hero from '../components/Hero'
+
+export default function Error () {
+    return<Hero>
+
+    </Hero>
 }
