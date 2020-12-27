@@ -4,16 +4,21 @@ import Banner from '../components/Banner'
 
 import{Link} from 'react-router-dom'
 
-export default function Error () {
-    return<Hero hero="roomsHero">
-         <Banner title="Our rooms">
-             <Link to="/" className="btn-primary">
-                 Return Home
-             </Link>
-         </Banner>
+import RoomsContainer from "../components/RoomsContainer";
+const Rooms = () => {
+  return (
+    <>
+      <Hero hero="roomsHero">
+        <Banner title="our rooms">
+          <Link to="/" className="btn-primary">
+            return home
+          </Link>
+        </Banner>
+      </Hero>
+      <RoomsContainer />
+    </>
+  );
+};
 
-    </Hero>
+export default Rooms;
 
-// export default function Rooms() {
-//     return<Hero hero="roomsHero"></Hero>
- }
